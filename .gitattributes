@@ -1,2 +1,62 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+#include<stdio.h>
+#include<conio.h>
+void display();
+void rules();
+void set_data();
+
+
+
+
+
+void display()
+{ 
+ 
+ printf("\n===================================================================================================================================\n");
+ printf("\n           MMMMM     MMMMM      OOO             OOO       DD DDD        YY         YY        MMMMM     MMMMM    EEEEEEEEEEE");
+ printf("\n           MMMMMM   MMMMMM    OO   OO        OO     OO    DD    DD        YY      YY         MMMMMM   MMMMMM    EEE ");
+ printf("\n           MMMMMMM MMMMMMM    OO   OO        OO     OO    DD    DD         YY    YY          MMMMMMM MMMMMMM    EE");
+ printf("\n           MM     MM    MM    OO   OO        OO     OO    DD    DD           YYYY            MM     MM    MM    EEEEEEEEEEE");
+ printf("\n           MM     MM    MM    OO   OO        OO     OO    DD    DD            YY             MM     MM    MM    EE");
+ printf("\n           MM     MM    MM    OO   OO        OO     OO    DD    DD            YY             MM     MM    MM    EEE");
+ printf("\n           MM     MM    MM      OOO             OOO       DD DDD              YY             MM     MM    MM    EEEEEEEEEEE");
+ printf("\n\n===================================================================================================================================\n");
+
+ printf("\n\n\n\n\n==================================================================================================================================\n");
+ printf("\n                                    ---------------------------    WELCOME    --------------------------------\n");
+ printf("\n                                    --------------------------   TO THE GAME    -------------------------------\n");
+ printf("\n=============================================================================================================================================\n");
+ printf("\nTo continue PRESS any key_");
+ getch();
+
+}
+
+void rules()
+{
+    printf("\n --------------------------------------------------  INSTRUCTION FOR PLAYING THE GAME  ----------------------------------------\n");
+    printf("\n\n\n                                           FIRSTLY YOU WILL NEED TO ENTER YOUR NAME.   ");
+    printf("\n\n                              NEXT AFTER YOU WILL CHOOSE YOUR MOOD THE NUMBER RIGHT DISPLAY TO THE LIST        ");
+    printf("\nTo continue PRESS ENTER key_");
+    getch();
+    
+}   
+void set_data()
+{
+    int num;
+    char name[30];
+ printf("\n\t\t\t  PLEASE ENTER YOUR NAME__:");
+ scanf("%s",&name);
+ printf("PLAYER ACTIVE__:%S",name);
+  getch();
+}
+
+int main()
+{
+    display();
+    rules();
+    set_data();
+
+    return 0;
+
+}
