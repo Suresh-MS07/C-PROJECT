@@ -47,8 +47,127 @@ void set_data()
     char name[30];
  printf("\n\t\t\t  PLEASE ENTER YOUR NAME__:");
  scanf("%s",&name);
- printf("PLAYER ACTIVE__:%S",name);
-  getch();
+ printf("PLAYER ACTIVE__:%s",name);
+ printf("\n\n\nPLEASE CHOOSE FROM THIS LIST\n\n\n");
+ printf("SAD      ==   1\n");
+ printf("ANGRY    ==   2\n");
+ printf("CURIOUS  ==   3\n");
+ printf(" BORED   ==   4\n\n");
+ printf("NOW ENTER THE NUMBER_");
+ scanf("%d",&num);
+ if (num == 1)
+ {
+   printf(" \n\n       HEY ! DON'T BE SAD, SMILE SUITS YOU. DO WEAR IT OFTEN \n\n\n");
+
+   printf("        OO                       OO\n");
+   printf("     OO    OO                 OO    OO\n");
+   printf("     OO    OO                 OO    OO\n");
+   printf("     OO    OO                 OO    OO\n");
+   printf("        OO                       OO\n\n");
+   printf("           ==                        ==\n");
+   printf("\n         ==                       ==  \n");
+   printf("              ==                ==\n");
+   printf("                    ======");
+ }
+ else if(num == 3)
+ {
+   printf("ARE YOU REALLY CURIOUS????\n");
+   printf(" LET SHOW YOU SOMETHING.....   YOU WILL BE FLABBERGASTED");
+   printf("\n =============================================================================================================================\n");
+   printf("\n|                     I AM IS TH SHORTEST COMPLETE SENTENCE IN THE ENGLISH LANGUGE.                                            |");
+   printf("\n|                        THE STRONGEST MUSCLE IN THE BODY IS THE TONGUE.                                                       |");
+   printf("\n|                    WHEN THE MOON IS DIRECTLY OVERHEAD, YOU WILL WEIGH SLIGHTLY LESS.                                         |");
+   printf("\n|                           WOMEN BLINK NEARLY TWICE AS MUCH AS MEN!                                                           |");
+   printf("\n|                      YOU CAN'T  KILL YOURSELF BY HOLDING YOUR BREATH.                                                        |");
+   printf("\n|                         IT IS IMPOSSIBLE TO LICK YOUR ELBOW.                                                                 |");
+   printf("\n|                        IT IS PHYSICALLY IMPOSSIBLE FOR PIGS TO LOOK UP INTO THE SKY.                                         |");
+   printf("\n|                         RYTHM IS THE LONGEST ENGLISH WORD WITHOUT A VOWEL.                                                   |");
+   printf("\n|                               A SNAIL CAN SLEEP FOR THREE YEARS.                                                             |");
+   printf("\n|                         THE ELECTRIC CHAIR WAS INVENTED BY A DESTIST.                                                        |");
+   printf("\n|                          A STRAWBERRY IS NOT AN ACTUAL BERRY, BUT A BANANA IS !                                              |");
+   printf("\n================================================================================================================================\n");
+
+ }
+ else if(num == 4)
+{
+   printf("   -----------------------------------------   LETS PLAY RIDDLE ME RI !!   --------------------------------------------------------\n");
+   printf("\n  -------------------------------  ANSWER THE RIDDLE FROM THE FOLLOWING OPTIONS  ------------------------------------------------ \n");
+
+   int score = 0;
+   int press;
+   printf("\n PRESS 1 TO CONTINUE\n");
+   scanf("%d",&press);
+   printf("\n\n\nQues.1 -> What Question Can You Never Answer Yes To_\n");
+   printf("Your Options Are-\n");
+   printf("1.Are You OK\n2.Are You Sleep Yet\n3.Are You Crying\n4.Are You Hungry.\n");
+   printf("\nENTER ANS._");
+   int ans;
+   scanf("%d",&ans);
+   if(ans == 2)
+   {
+     score++;
+     printf("Congrets %s ! You Choosed Correct One ..",name);
+   }else
+   printf("Oop's %s, You Choosed Wrong Option...",name);
+   printf("\n HEY ! %s,Your Score Is =%d ",name,score);
+   printf("\n\n\nSQues.2 -> What Month Has 28 Days?_\n");
+   printf("Your Options Are-\n");
+   printf("1.January\n2.Fbuary\n3.July\n4.September.\n");
+   printf("\nENTER ANS._");
+   scanf("%d",&ans);
+   if(ans == 2)
+   {
+     score++;
+     printf("Congrets %s ! You Choosed Correct One ..",name);
+   }
+   else
+   printf("Oop's %s, You Choosed Wrong Option...\n",name);
+   printf(" HEY ! %s,Your Score Is =%d ",name,score);
+    printf("\n\n\nQues.3 -> What Goes Up But Never Comes Down?_\n");
+   printf("Your Options Are-\n");
+   printf("1. Parachut\n2. Rocket\n3. Age\n4. Kite.\n");
+   printf("\nENTER ANS._");
+   scanf("%d",&ans);
+   if(ans == 3)
+   {
+     score++;
+     printf("Congrets %s ! You Choosed Correct One ..",name);
+   }
+   else
+   printf("Oop's %s, You Choosed Wrong Option...\n",name);
+   printf(" HEY ! %s,Your Score Is =%d ",name,score);
+
+    printf("\n\n\nQues.4-> I Shave Everyday, But My Beard The Same. What Am I ??_\n\n");
+   printf("Your Options Are-\n");
+   printf("1.Dog\n2.Bold man\n3.Super Man\n4.Barber.\n");
+   printf("\nENTER ANS._");
+   scanf("%d",&ans);
+   if(ans == 4)
+   {
+     score++;
+     printf("Congrets %s ! You Choosed Correct One ..",name);
+   }
+   else
+   printf("Oop's %s, You Choosed Wrong Option...\n",name);
+   printf(" HEY ! %s,Your Score Is =%d ",name,score);
+
+
+    printf("\n\n\nQues.5 -> What  Single Digit Appears Most Frequently Between and Including The Number 1 And 1000 ?_\n\n");
+   printf("Your Options Are-\n");
+   printf("1. 9\n2. 1\n3. 4\n4. 2.\n");
+   printf("\nENTER ANS._");
+   scanf("%d",&ans);
+   if(ans == 2)
+   {
+     score++;
+     printf("Congrets %s ! You Choosed Correct One ..",name);
+   }
+   else
+   printf("Oop's %s, You Choosed Wrong Option...\n",name);
+   printf(" HEY ! %s,Your Final Score Is =%d ",name,score);
+}
+printf("%s,Dont Be Smart Choose The Correct One",name);
+set_data();
 }
 
 int main()
