@@ -1,15 +1,11 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
 #include<stdio.h>
 #include<conio.h>
 void display();
 void rules();
 void set_data();
-
-
-
-
-
 void display()
 { 
  
@@ -31,24 +27,23 @@ void display()
  getch();
 
 }
-
 void rules()
 {
-    printf("\n --------------------------------------------------  INSTRUCTION FOR PLAYING THE GAME  ----------------------------------------\n");
-    printf("\n\n\n                                           FIRSTLY YOU WILL NEED TO ENTER YOUR NAME.   ");
-    printf("\n\n                              NEXT AFTER YOU WILL CHOOSE YOUR MOOD THE NUMBER RIGHT DISPLAY TO THE LIST        ");
-    printf("\nTo continue PRESS ENTER key_");
+    printf("\n\n --------------------------------------------------  INSTRUCTION FOR PLAYING THE GAME  ----------------------------------------\n");
+    printf("\n\n\n                                               FIRSTLY YOU WILL NEED TO ENTER YOUR NAME.   ");
+    printf("\n\n                                            NEXT AFTER YOU WILL CHOOSE YOUR MOOD THE NUMBER RIGHT DISPLAY TO THE LIST        ");
+    printf("\nTo continue PRESS any key_");
     getch();
     
-}   
+} 
 void set_data()
 {
     int num;
     char name[30];
- printf("\n\t\t\t  PLEASE ENTER YOUR NAME__:");
+ printf("\n\t\t\tPLEASE ENTER YOUR NAME__:");
  scanf("%s",&name);
- printf("PLAYER ACTIVE__:%s",name);
- printf("\n\n\nPLEASE CHOOSE FROM THIS LIST\n\n\n");
+ printf("\nPLAYER ACTIVE__:%s",name);
+ printf("\n\n\n\nPLEASE CHOOSE FROM THIS LIST\n\n\n");
  printf("SAD      ==   1\n");
  printf("ANGRY    ==   2\n");
  printf("CURIOUS  ==   3\n");
@@ -160,14 +155,22 @@ void set_data()
    if(ans == 2)
    {
      score++;
-     printf("Congrets %s ! You Choosed Correct One ..",name);
+     printf("\nCongrets %s! You Choosed Correct One ..",name);
    }
    else
-   printf("Oop's %s, You Choosed Wrong Option...\n",name);
-   printf(" HEY ! %s,Your Final Score Is =%d ",name,score);
+   printf("\nOop's %s, You Choosed Wrong Option...\n",name);
+   printf("\n HEY ! %s,Your Final Score Is =%d ",name,score);
+   
+
 }
-printf("%s,Dont Be Smart Choose The Correct One",name);
-set_data();
+else if(num == 2)
+{
+  printf("You know .........chronic (long term) anger has been Linkes to health issue such as high blood pressure, heart problem, headches,skin disorder. ");
+  printf("headache digestion problems, such as abdominal pain insomnia incresed anxiety depration problem");
+
+}
+printf("\n\nHey !%s,Dont Be Smart Choose The Correct One",name);
+   set_data();
 }
 
 int main()
